@@ -34,6 +34,7 @@ class MusicLibraryController
       else call_selection == 'play_song'
       play_song
     end 
+    self.call
   end 
   
   def list_songs 
