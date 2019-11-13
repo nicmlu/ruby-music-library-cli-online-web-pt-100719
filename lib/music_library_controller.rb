@@ -23,17 +23,17 @@ class MusicLibraryController
     
     if call_selection != 'exit'
       case call_selection
-    when 'list_songs'
+    when 'list songs'
       list_songs 
-    when 'list_artists'
+    when 'list artists'
       list_artists
-    when 'list_genres'
+    when 'list genres'
       list_genres
-      elsif call_selection == 'list_artist'
+    when 'list artist'
       list_songs_by_artist
-      elsif call_selection == 'list_genre'
+    when == 'list genre'
       list_songs_by_genre
-      else call_selection == 'play_song'
+    when == 'play song'
       play_song
     end 
     self.call
