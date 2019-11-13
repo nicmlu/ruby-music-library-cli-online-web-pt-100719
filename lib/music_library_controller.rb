@@ -21,11 +21,13 @@ class MusicLibraryController
     puts "What would you like to do?"
     call_selection = gets.chomp 
     
-    if call_selection == 'list_songs'
+    if call_selection != 'exit'
+      case call_selection
+    when 'list_songs'
       list_songs 
-      elsif call_selection == 'list_artists'
+    when 'list_artists'
       list_artists
-      elsif call_selection == 'list_genres'
+    when 'list_genres'
       list_genres
       elsif call_selection == 'list_artist'
       list_songs_by_artist
