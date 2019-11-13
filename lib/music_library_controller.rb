@@ -21,7 +21,19 @@ class MusicLibraryController
     puts "What would you like to do?"
     call_selection = gets.chomp until call_selection == 'exit'
     
-    if call_selection == 
+    if call_selection == 'list_songs'
+      list_songs 
+      elsif call_selection == 'list_artists'
+      list_artists
+      elsif call_selection == 'list_genres'
+      list_genres
+      elsif call_selection == 'list_artist'
+      list_songs_by_artist
+      elsif call_selection == 'list_genre'
+      list_songs_by_genre
+      else call_selection == 'play_song'
+      play_song
+    end 
   end 
   
   def list_songs 
