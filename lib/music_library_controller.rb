@@ -66,8 +66,8 @@ class MusicLibraryController
   end 
 end 
 
-new_obj = MusicLibraryController.new
-new_obj.list_songs
+# new_obj = MusicLibraryController.new
+# new_obj.list_songs
 
 
 
